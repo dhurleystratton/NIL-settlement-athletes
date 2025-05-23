@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "nil_settlement_athletes"
+version = "0.1.0"
+description = "NCAA athlete contact discovery for NIL settlement claims"
+authors = ["Litigation Finance Company"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "*"
+openpyxl = "*"
+requests = "*"
+python-dotenv = "*"
+apify-client = "*"
+pydantic = "*"
+tenacity = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["."]
