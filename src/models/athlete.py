@@ -1,8 +1,10 @@
-from dataclasses import dataclass
-from typing import List
+from __future__ import annotations
 
-@dataclass
-class Athlete:
+from typing import List
+from pydantic import BaseModel
+
+
+class Athlete(BaseModel):
     player: str
     first_name: str
     last_name: str
